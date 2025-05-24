@@ -1,0 +1,8 @@
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.tags :hover {
+  color: rgb(26, 198, 26);
+}
