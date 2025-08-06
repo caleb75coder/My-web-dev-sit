@@ -114,10 +114,10 @@ const Header = () => {
 
   return (
     <main
-      className={` header w-[100%] opacity-94 ${
-        open ? "bg-white text-black " : "bg-black text-white "
+      className={` header w-[100%]     border-white/20 bg-white/45  shadow-lg backdrop-filter backdrop-blur-md ${
+        open ? " text-black " : "bg-black text-white "
       } `}>
-      <div className=" flex  md:flex-row flex-col items-center justify-between  bg-gray-300 shadow-gray-900 shadow-md py-2 px-1 w-[100%] space-y-2 ">
+      <div className=" flex  md:flex-row flex-col items-center justify-between   shadow-gray-900 shadow-md py-2 px-1 w-[100%] space-y-2 ">
         <div className="flex justify-between items-center md:w-[100%] w-[100%]  ">
           <div className="space-x-1 flex items-center md:w-[60%] w-[100%]  text-black ">
             <div className="lg:hidden ">
@@ -148,7 +148,7 @@ const Header = () => {
             </span>
           </div>
 
-          <div className="tags md:flex hidden items-center justify-evenly space-x-8 text-black font-mono py-5 text-xl font-bold w-[70%] ">
+          <div className="tags md:flex hidden items-center justify-evenly space-x-8 text-black font-mono py-5 text-xl font-bold w-[70%]  ">
             {NavLink.map((nav) => (
               <Link to={nav.path} key={nav.id}>
                 {nav.title}
@@ -159,7 +159,7 @@ const Header = () => {
 
         <div className="text-black  md:w-[30%] w-[95%] md:ml-10  h-[5vh] items-center flex  bg-gray-400 rounded-2xl space-x-3">
           <input
-            className="text=white w-[85%] bg-gray-300 rounded-l-2xl border-2 h-[5vh] px-3"
+            className="text=white w-[85%] bg-gray-300 rounded-l-2xl border-none outline h-[5vh] px-3 "
             type="search"
             placeholder="Codding"
           />
@@ -169,48 +169,48 @@ const Header = () => {
         </div>
       </div>
 
-      <section className=" space-y-3 md:overflow-x-hidden overflow-x-auto w-[100%] bg-gray-300">
+      <section className=" space-y-3 md:overflow-x-hidden overflow-x-auto w-[100%]  shadow-2xl">
         <div className=" flex items-center justify-between space-x-3 text-black py-3 px-2   ">
           <button
             onClick={handleReturn}
-            className="bg-gray-400 rounded-2xl px-2 py-1 flex  justify-center ">
+            className="bg-gray-400 rounded-2xl px-4 py-1 flex  justify-center ">
             Javascript
           </button>
           <button
             onClick={handlepython}
-            className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center">
+            className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center">
             Python
           </button>
           <button
             onClick={handleuiux}
-            className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center ">
+            className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center ">
             UI/UX.Design
           </button>
           <button
             onClick={handleit}
-            className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center ">
+            className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center ">
             IT.Consulting
           </button>
 
-          <button className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center ">
+          <button className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center ">
             Cloud.Solutions
           </button>
           <button
             onClick={handleapp}
-            className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center ">
+            className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center ">
             Mobile.App.Dev
           </button>
-          <button className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center">
+          <button className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center">
             Custom.Software.Development
           </button>
-          <button className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center">
+          <button className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center">
             Animation
           </button>
-          <button className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center">
+          <button className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center">
             Back.End
           </button>
 
-          <button className="bg-gray-400 rounded-2xl px-2 py-1  flex  justify-center">
+          <button className="bg-gray-400 rounded-2xl px-4 py-1  flex  justify-center">
             Data.Engineering
           </button>
         </div>
